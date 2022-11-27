@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,800');
+
+body {
+  background-color: #0072ff;
+  font-family: 'Raleway', sans-serif;
+
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .adder {
+    position: relative;
+    width: 250px;
+    margin: 0px auto;
+    display: block;
+    }
+    .adder ::-webkit-input-placeholder {
+      color: #cecece;
+    }
+    .input {
+      outline: none;
+      border: 1px solid rgb(73, 73, 73);
+      background-color: rgb(234, 234, 255);
+      color: rgb(0, 0, 0);
+      font-family: 'Raleway', sans-serif;
+      height: 50px;
+      width: 270px;
+      padding-left: 10px;
+      font-weight: 500;
+      font-size: 16px;
+      margin-left: -5px;
+    }
+    span {
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 50px;     
+      line-height: 1;
+      cursor: pointer;
+      transition: all 200ms;
+      color: rgb(0, 13, 255);
+      will-change:contents;
+    }
+    ul li.checked {
+      background: #0052b6;
+      color: #fff;
+      text-decoration: line-through;
+    }
+    .close {
+      display: none;
+    }
+    span:hover{
+      transform: rotate(180deg);
+    }
+ 
+  ul {
+    padding: 0px;
+  }
+
+  .draggable {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    height: 50px;
+    list-style-type: none;
+    margin: 10px;
+    background-color: white;
+    color: black;
+    width: 260px;
+    line-height: 3.2;
+    padding-left: 10px;
+    cursor: move;
+    transition: all 200ms;
+    user-select: none;
+    margin: 10px auto;
+    position: relative;
+  }
+  .draggable:after {
+    content: 'Dblclick to close';
+    right: 7px;
+    font-size: 10px;
+    position: absolute;
+    cursor: pointer;
+    line-height: 5;
+    opacity: 1;
+  } 
+  .draggable:hover {
+      opacity: 0.5;
+      transform: translate(0);
+}
+.over {
+  transform: scale(1.1, 1.1);
+}
